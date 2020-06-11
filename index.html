@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISS Location</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 300px;
+      }
+      .container {
+        margin: 16px 0 8px;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        width: 90%;
+      }
+      li {
+        background: linear-gradient(
+          to bottom,
+          #fcfff4 0%,
+          #dfe5d7 40%,
+          #b3bead 100%
+        );
+        display: block;
+        padding: 8px;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ISS Tracker</h1>
+      <ul>
+        <li id="date"></li>
+        <li id="time"></li>
+        <li id="lng"></li>
+        <li id="lat"></li>
+        <li id="alt"></li>
+      </ul>
+    </div>
+    <div id="map"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
